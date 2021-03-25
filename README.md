@@ -8,8 +8,8 @@
 
 1. [工厂模式](https://github.com/swiftdo/design-patterns/blob/master/1.%20Factory%20Pattern.md)
 2. [建造者模式](https://github.com/swiftdo/design-patterns/blob/master/2.%20Builder%20Pattern.md)
-3. [原型模式]()
-4. [单例模式]()
+3. [原型模式](https://github.com/swiftdo/design-patterns/blob/master/3.%20Prototype%20Pattern.md)
+4. [单例模式](https://github.com/swiftdo/design-patterns/blob/master/4.Singleton%20Pattern.md)
 
 ## 结构型
 
