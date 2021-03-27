@@ -6,7 +6,7 @@
 
 ## 类间的关系
 
-* [类间的关系](https://github.com/swiftdo/design-patterns/blob/master/1.%20Class%20Releation.md)
+* [x] [类间的关系](https://github.com/swiftdo/design-patterns/blob/master/0.%20Class%20Releation.md)
 
 ## 创建型
 
