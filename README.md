@@ -25,8 +25,8 @@
 * [x] [桥接模式](https://github.com/swiftdo/design-patterns/blob/master/6.%20Bridge%20Pattern.md)
 * [x] [过滤器模式](https://github.com/swiftdo/design-patterns/blob/master/7.%20Filter%E3%80%81Criteria%20Pattern.md)
 * [x] [组合模式](https://github.com/swiftdo/design-patterns/blob/master/8.%20Composite%20Pattern.md)
-* [ ] [装饰器模式](https://github.com/swiftdo/design-patterns/blob/master/9.%20Decorator%20Pattern.md)
-* [ ] [外观模式](https://github.com/swiftdo/design-patterns/blob/master/10.%20Facade%20Pattern.md)
+* [x] [装饰器模式](https://github.com/swiftdo/design-patterns/blob/master/9.%20Decorator%20Pattern.md)
+* [x] [外观模式](https://github.com/swiftdo/design-patterns/blob/master/10.%20Facade%20Pattern.md)
 * [ ] [享元模式](https://github.com/swiftdo/design-patterns/blob/master/11.%20Flyweight%20Pattern.md)
 * [ ] [代理模式](https://github.com/swiftdo/design-patterns/blob/master/12.%20Proxy%20Pattern.md)
 
