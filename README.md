@@ -4,9 +4,10 @@
 
 项目的初衷就是收集比较经典合适的案例，来帮助理解设计模式，这样大家在写代码，看别人的代码也会容易一些。非常希望您的参与，我们一起维护。
 
-## 类间的关系
+## 基础
 
 * [x] [类间的关系](https://github.com/swiftdo/design-patterns/blob/master/0.%20Class%20Releation.md)
+* [x] [设计原则](https://github.com/swiftdo/design-patterns/blob/master/0.1%20Design%20Principles.md) 
 
 ## 创建型
 
