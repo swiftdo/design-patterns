@@ -28,7 +28,7 @@
 * [x] [装饰器模式](https://github.com/swiftdo/design-patterns/blob/master/9.%20Decorator%20Pattern.md)
 * [x] [外观模式](https://github.com/swiftdo/design-patterns/blob/master/10.%20Facade%20Pattern.md)
 * [x] [享元模式](https://github.com/swiftdo/design-patterns/blob/master/11.%20Flyweight%20Pattern.md)
-* [ ] [代理模式](https://github.com/swiftdo/design-patterns/blob/master/12.%20Proxy%20Pattern.md)
+* [x] [代理模式](https://github.com/swiftdo/design-patterns/blob/master/12.%20Proxy%20Pattern.md)
 
 ## 行为型
 
