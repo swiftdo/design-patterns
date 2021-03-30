@@ -39,7 +39,7 @@
 这些设计模式特别关注对象之间的通信。
 
 * [x] [责任链模式](https://github.com/swiftdo/design-patterns/blob/master/13.%20Chain%20of%20Responsibility%20Pattern.md)
-* [ ] [命令模式](https://github.com/swiftdo/design-patterns/blob/master/14.%20Command%20Pattern.md)
+* [x] [命令模式](https://github.com/swiftdo/design-patterns/blob/master/14.%20Command%20Pattern.md)
 * [ ] [解释器模式](https://github.com/swiftdo/design-patterns/blob/master/15.%20Interpreter%20Pattern.md)
 * [ ] [迭代器模式](https://github.com/swiftdo/design-patterns/blob/master/16.%20Iterator%20Pattern.md)
 * [ ] [中介者模式](https://github.com/swiftdo/design-patterns/blob/master/17.%20Mediator%20Pattern.md)
