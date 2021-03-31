@@ -42,7 +42,7 @@
 * [x] [命令模式](https://github.com/swiftdo/design-patterns/blob/master/14.%20Command%20Pattern.md)
 * [x] [解释器模式](https://github.com/swiftdo/design-patterns/blob/master/15.%20Interpreter%20Pattern.md)
 * [x] [迭代器模式](https://github.com/swiftdo/design-patterns/blob/master/16.%20Iterator%20Pattern.md)
-* [ ] [中介者模式](https://github.com/swiftdo/design-patterns/blob/master/17.%20Mediator%20Pattern.md)
+* [x] [中介者模式](https://github.com/swiftdo/design-patterns/blob/master/17.%20Mediator%20Pattern.md)
 * [ ] [备忘录模式](https://github.com/swiftdo/design-patterns/blob/master/18.%20Memento%20Pattern.md)
 * [ ] [观察者模式](https://github.com/swiftdo/design-patterns/blob/master/19.%20Observer%20Pattern.md)
 * [ ] [状态模式](https://github.com/swiftdo/design-patterns/blob/master/20.%20State%20Pattern.md)
