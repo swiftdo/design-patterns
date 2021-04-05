@@ -48,7 +48,7 @@
 * [x] [状态模式](https://github.com/swiftdo/design-patterns/blob/master/20.%20State%20Pattern.md)
 * [x] [空对象模式](https://github.com/swiftdo/design-patterns/blob/master/21.%20Null%20Object%20Pattern.md)
 * [x] [策略模式](https://github.com/swiftdo/design-patterns/blob/master/22.%20Strategy%20Pattern.md)
-* [ ] [模板模式](https://github.com/swiftdo/design-patterns/blob/master/23.%20Template%20Pattern.md)
+* [x] [模板模式](https://github.com/swiftdo/design-patterns/blob/master/23.%20Template%20Pattern.md)
 * [x] [访问者模式](https://github.com/swiftdo/design-patterns/blob/master/24.%20Visitor%20Pattern.md)
 
 
