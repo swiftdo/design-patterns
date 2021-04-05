@@ -44,7 +44,7 @@
 * [x] [迭代器模式](https://github.com/swiftdo/design-patterns/blob/master/16.%20Iterator%20Pattern.md)
 * [x] [中介者模式](https://github.com/swiftdo/design-patterns/blob/master/17.%20Mediator%20Pattern.md)
 * [x] [备忘录模式](https://github.com/swiftdo/design-patterns/blob/master/18.%20Memento%20Pattern.md)
-* [ ] [观察者模式](https://github.com/swiftdo/design-patterns/blob/master/19.%20Observer%20Pattern.md)
+* [x] [观察者模式](https://github.com/swiftdo/design-patterns/blob/master/19.%20Observer%20Pattern.md)
 * [x] [状态模式](https://github.com/swiftdo/design-patterns/blob/master/20.%20State%20Pattern.md)
 * [x] [空对象模式](https://github.com/swiftdo/design-patterns/blob/master/21.%20Null%20Object%20Pattern.md)
 * [x] [策略模式](https://github.com/swiftdo/design-patterns/blob/master/22.%20Strategy%20Pattern.md)
