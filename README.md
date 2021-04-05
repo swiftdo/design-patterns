@@ -52,11 +52,6 @@
 * [x] [访问者模式](https://github.com/swiftdo/design-patterns/blob/master/24.%20Visitor%20Pattern.md)
 
 
-## 参阅
-* [设计模式](https://www.runoob.com/design-pattern/design-pattern-intro.html)
-* [设计模式](https://refactoringguru.cn/design-patterns/factory-method)
-
-
 ## 交流
 
 如果您有更好的案例，不防提 issue，或者提 PR。当然如果文字有不当之处也欢迎指出。
