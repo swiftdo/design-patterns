@@ -12,6 +12,8 @@
   
 </head>
 <body>
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+
   <div data-app id="main">加载中</div>
   <script>
     window.$docsify = {
@@ -33,7 +35,12 @@
         fontsize:'0.9em',
         color:'rgb(90,90,90)',
         language:'chinese'
-      }
+      },
+      plugins: [
+        EditOnGithubPlugin.create(
+          'https://github.com/swiftdo/design-patterns/blob/master/'
+        ),
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -42,7 +49,6 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-swift.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
