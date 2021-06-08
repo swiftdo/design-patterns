@@ -5,7 +5,7 @@
 
 项目的初衷就是收集比较经典合适的案例，来帮助理解设计模式，这样大家在写代码，看别人的代码也会容易一些。非常希望您的参与，我们一起维护。
 
-**支持线上浏览**：[design-patterns](https://oldbird.run/design-patterns/#/)
+**支持线上浏览**：[https://oldbird.run/design-patterns](https://oldbird.run/design-patterns/#/)
 
 ![](http://blog.loveli.site/mweb/16169324651038.jpg)
 
