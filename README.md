@@ -9,47 +9,47 @@
 
 ## 基础
 
-* [x] [类间的关系](https://github.com/swiftdo/design-patterns/blob/master/0.%20Class%20Releation.md)
-* [x] [设计原则](https://github.com/swiftdo/design-patterns/blob/master/0.1%20Design%20Principles.md) 
+* [x] 类间的关系
+* [x] 设计原则
 
 ## 创建型
 
 这些设计模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活。
 
-* [x] [工厂模式](https://github.com/swiftdo/design-patterns/blob/master/1.%20Factory%20Pattern.md)
-* [x] [建造者模式](https://github.com/swiftdo/design-patterns/blob/master/2.%20Builder%20Pattern.md)
-* [x] [原型模式](https://github.com/swiftdo/design-patterns/blob/master/3.%20Prototype%20Pattern.md)
-* [x] [单例模式](https://github.com/swiftdo/design-patterns/blob/master/4.Singleton%20Pattern.md)
+* [x] 工厂模式
+* [x] 建造者模式
+* [x] 原型模式
+* [x] 单例模式
 
 ## 结构型
 
 这些设计模式关注类和对象的组合。继承的概念被用来组合接口和定义组合对象获得新功能的方式。
 
-* [x] [适配器模式](https://github.com/swiftdo/design-patterns/blob/master/5.%20Adapter%20Pattern.md)
-* [x] [桥接模式](https://github.com/swiftdo/design-patterns/blob/master/6.%20Bridge%20Pattern.md)
-* [x] [过滤器模式](https://github.com/swiftdo/design-patterns/blob/master/7.%20Filter%E3%80%81Criteria%20Pattern.md)
-* [x] [组合模式](https://github.com/swiftdo/design-patterns/blob/master/8.%20Composite%20Pattern.md)
-* [x] [装饰器模式](https://github.com/swiftdo/design-patterns/blob/master/9.%20Decorator%20Pattern.md)
-* [x] [外观模式](https://github.com/swiftdo/design-patterns/blob/master/10.%20Facade%20Pattern.md)
-* [x] [享元模式](https://github.com/swiftdo/design-patterns/blob/master/11.%20Flyweight%20Pattern.md)
-* [x] [代理模式](https://github.com/swiftdo/design-patterns/blob/master/12.%20Proxy%20Pattern.md)
+* [x] 适配器模式
+* [x] 桥接模式
+* [x] 过滤器模式
+* [x] 组合模式]
+* [x] 装饰器模式
+* [x] 外观模式
+* [x] 享元模式
+* [x] 代理模式
 
 ## 行为型
 
 这些设计模式特别关注对象之间的通信。
 
-* [x] [责任链模式](https://github.com/swiftdo/design-patterns/blob/master/13.%20Chain%20of%20Responsibility%20Pattern.md)
-* [x] [命令模式](https://github.com/swiftdo/design-patterns/blob/master/14.%20Command%20Pattern.md)
-* [x] [解释器模式](https://github.com/swiftdo/design-patterns/blob/master/15.%20Interpreter%20Pattern.md)
-* [x] [迭代器模式](https://github.com/swiftdo/design-patterns/blob/master/16.%20Iterator%20Pattern.md)
-* [x] [中介者模式](https://github.com/swiftdo/design-patterns/blob/master/17.%20Mediator%20Pattern.md)
-* [x] [备忘录模式](https://github.com/swiftdo/design-patterns/blob/master/18.%20Memento%20Pattern.md)
-* [x] [观察者模式](https://github.com/swiftdo/design-patterns/blob/master/19.%20Observer%20Pattern.md)
-* [x] [状态模式](https://github.com/swiftdo/design-patterns/blob/master/20.%20State%20Pattern.md)
-* [x] [空对象模式](https://github.com/swiftdo/design-patterns/blob/master/21.%20Null%20Object%20Pattern.md)
-* [x] [策略模式](https://github.com/swiftdo/design-patterns/blob/master/22.%20Strategy%20Pattern.md)
-* [x] [模板模式](https://github.com/swiftdo/design-patterns/blob/master/23.%20Template%20Pattern.md)
-* [x] [访问者模式](https://github.com/swiftdo/design-patterns/blob/master/24.%20Visitor%20Pattern.md)
+* [x] 责任链模式
+* [x] 命令模式
+* [x] 解释器模式
+* [x] 迭代器模式
+* [x] 中介者模式
+* [x] 备忘录模式
+* [x] 观察者模式
+* [x] 状态模式
+* [x] 空对象模式
+* [x] 策略模式
+* [x] 模板模式
+* [x] 访问者模式
 
 
 ## 交流
