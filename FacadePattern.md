@@ -1,12 +1,10 @@
 为子系统中的一组接口提供一个一致的界面，外观模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。
 
-
 ## 样例
 
-假设我们有一个压缩与解压缩系统专门处理文件的压缩和解压缩，这个系统有三个模块：ZIPModel、RARModel、ZModel，分别处理ZIP、RAR、7Z三种文件格式的压缩与解压缩。现在这一系统要提供给上层应用程序使用。
+假设我们有一个压缩与解压缩系统专门处理文件的压缩和解压缩，这个系统有三个模块：ZIPModel、RARModel、ZModel，分别处理 ZIP、RAR、7Z 三种文件格式的压缩与解压缩。现在这一系统要提供给上层应用程序使用。
 
-![](http://blog.loveli.site/mweb/16169034808432.jpg)
-
+![](http://blog.oldbird.run/mweb/16169034808432.jpg)
 
 ```swift
 import Foundation
@@ -23,7 +21,7 @@ class ZIPModel: Model {
         print("ZIP 模块正在进行\(path.srcFilePath)文件的压缩...")
         print("文件压缩成功,已保存至\(path.dstFilePath)")
     }
-    
+
     func decompress(path: ModelZipPath) {
         print("ZIP 模块正在进行\(path.srcFilePath)文件的解压缩...")
         print("文件压解缩成功,已保存至\(path.dstFilePath)")
@@ -35,7 +33,7 @@ class RARModel: Model {
         print("RAR 模块正在进行\(path.srcFilePath)文件的压缩...")
         print("文件压缩成功,已保存至\(path.dstFilePath)")
     }
-    
+
     func decompress(path: ModelZipPath) {
         print("RAR 模块正在进行\(path.srcFilePath)文件的解压缩...")
         print("文件压解缩成功,已保存至\(path.dstFilePath)")
@@ -47,7 +45,7 @@ class ZModel: Model {
         print("7Z 模块正在进行\(path.srcFilePath)文件的压缩...")
         print("文件压缩成功,已保存至\(path.dstFilePath)")
     }
-    
+
     func decompress(path: ModelZipPath) {
         print("7Z 模块正在进行\(path.srcFilePath)文件的解压缩...")
         print("文件压解缩成功,已保存至\(path.dstFilePath)")
@@ -60,13 +58,13 @@ class CompressionFacade {
     lazy var zipModel = ZIPModel()
     lazy var rarModel = RARModel()
     lazy var zModel = ZModel()
-    
+
     /// 根据不同的压缩类型，压缩成不同的格式
     func compress(path: ModelZipPath, type: String) -> Bool {
-        
+
         let extName = "." + type
         let fullName = path.dstFilePath + extName
-        
+
         if type.lowercased() == "zip" {
             zipModel.compress(path: (path.srcFilePath, fullName))
         } else if type.lowercased() == "rar" {
@@ -79,11 +77,11 @@ class CompressionFacade {
         }
         return true
     }
-    
+
     func decompress(path: ModelZipPath) -> Bool {
         let url = URL(fileURLWithPath: path.srcFilePath)
         let type = url.pathExtension
-        
+
         if type.lowercased() == "zip" {
             zipModel.decompress(path: path)
         } else if type.lowercased() == "rar" {

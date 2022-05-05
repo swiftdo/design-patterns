@@ -2,7 +2,7 @@
 
 ## 样例
 
-![](http://blog.loveli.site/mweb/16169265040529.jpg)
+![](http://blog.oldbird.run/mweb/16169265040529.jpg)
 
 ```swift
 import Foundation
@@ -13,24 +13,24 @@ protocol IFlyweight {
 
 struct Color {
     let type: String
-    
+
     init(type: String) {
         self.type = type
     }
 }
 
 class FlyweightImpl: IFlyweight {
-    
+
     private var color: Color
     private var width: Int
     private var height: Int
-    
+
     init(color: Color) {
         self.color = color
         self.width = 0
         self.height = 0
     }
-    
+
     func setDetail(width: Int, height: Int) {
         self.width = width
         self.height = height
@@ -40,7 +40,7 @@ class FlyweightImpl: IFlyweight {
 
 class FlyweightFactory {
     private var colorFlyweighMap: [String: FlyweightImpl] = [:]
-    
+
     func getFlyweight(colorName: String) -> FlyweightImpl? {
         if colorFlyweighMap.keys.contains(colorName) {
             return colorFlyweighMap[colorName]
@@ -68,7 +68,7 @@ flyweight2?.setDetail(width: 300, height: 300)
 结果显示：
 
 ```sh
-对象地址: 0x0000600001824030 color: red width: 100 height: 200 
-对象地址: 0x0000600001824030 color: red width: 100 height: 400 
-对象地址: 0x0000600001812880 color: green width: 300 height: 300 
+对象地址: 0x0000600001824030 color: red width: 100 height: 200
+对象地址: 0x0000600001824030 color: red width: 100 height: 400
+对象地址: 0x0000600001812880 color: green width: 300 height: 300
 ```

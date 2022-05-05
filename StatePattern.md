@@ -2,32 +2,32 @@
 
 ## 样例
 
-![](http://blog.loveli.site/mweb/16176017312597.jpg)
+![](http://blog.oldbird.run/mweb/16176017312597.jpg)
 
 ```swift
 class Context : CustomDebugStringConvertible {
     private var state: State = UnauthorizedState()
-    
+
     var isAuthorized: Bool {
         get {
             return state.isAuthorized(context: self)
         }
     }
-    
+
     var userId: String? {
         get {
             return state.userId(context: self)
         }
     }
-    
+
     func changeStateToAuthorized(userId: String) {
         state = AuthorizedState(userId: userId)
     }
-    
+
     func changeStateToUnauthorized() {
         state = UnauthorizedState()
     }
-    
+
     var debugDescription: String {
         return "isAuthorized: \(isAuthorized), userId:\(userId ?? "")"
     }
@@ -49,15 +49,15 @@ class UnauthorizedState: State {
 
 class AuthorizedState: State {
     let userId: String
-    
+
     init(userId: String) {
         self.userId = userId
     }
-    
+
     func isAuthorized(context: Context) -> Bool {
         true
     }
-    
+
     func userId(context: Context) -> String? {
         userId
     }

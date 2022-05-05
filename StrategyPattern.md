@@ -4,7 +4,7 @@
 
 ## 样例
 
-![](http://blog.loveli.site/mweb/16171987137559.jpg)
+![](http://blog.oldbird.run/mweb/16171987137559.jpg)
 
 ```swift
 protocol Strategy {
@@ -31,11 +31,11 @@ class OperationMultiply: Strategy {
 
 class Context {
     private var strategy: Strategy
-    
+
     init(strategy: Strategy) {
         self.strategy = strategy
     }
-    
+
     func executeStrategy(a: Int, b:Int) {
         strategy.operation(a: a, b: b)
     }

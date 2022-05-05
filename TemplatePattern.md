@@ -1,9 +1,8 @@
 定义一个操作中的算法的骨架，而将一些步骤延迟到子类中。模板方法使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。
 
-
 ## 样例
 
-![](http://blog.loveli.site/mweb/16176017312597.jpg)
+![](http://blog.oldbird.run/mweb/16176017312597.jpg)
 
 ```swift
 protocol Game {
@@ -22,15 +21,15 @@ extension Game {
 }
 
 final class Cricket: Game {
-    
+
     func initialize() {
         print("Cricket Game Initialized! Start playing.")
     }
-    
+
     func end() {
         print("Cricket Game Finished!")
     }
-    
+
     func start() {
         print("Cricket Game Started. Enjoy the game!")
     }
@@ -38,15 +37,15 @@ final class Cricket: Game {
 
 
 final class Football: Game {
-    
+
     func initialize() {
         print("Football Game Initialized! Start playing.")
     }
-    
+
     func end() {
         print("Football Game Finished!")
     }
-    
+
     func start() {
         print("Football Game Started. Enjoy the game!")
     }

@@ -2,14 +2,13 @@
 
 ## 备忘录模式的结构
 
-* 发起人：记录当前时刻的内部状态，负责定义哪些属于备份范围的状态，负责创建和恢复备忘录数据。
-* 备忘录：负责存储发起人对象的内部状态，在需要的时候提供发起人需要的内部状态。
-* 管理角色：对备忘录进行管理，保存和提供备忘录。
-
+- 发起人：记录当前时刻的内部状态，负责定义哪些属于备份范围的状态，负责创建和恢复备忘录数据。
+- 备忘录：负责存储发起人对象的内部状态，在需要的时候提供发起人需要的内部状态。
+- 管理角色：对备忘录进行管理，保存和提供备忘录。
 
 ## 样例
 
-![](http://blog.loveli.site/mweb/16176017312597.jpg)
+![](http://blog.oldbird.run/mweb/16176017312597.jpg)
 
 ```swift
 /// 文章类
@@ -17,18 +16,18 @@ struct Article : CustomDebugStringConvertible{
     var title: String
     var content: String
     var cover: String
-    
-    
+
+
     func saveToMemento() -> ArticleMemento {
         return ArticleMemento(article: self)
     }
-    
+
     mutating func undoFromMemento(_ memento: ArticleMemento) {
         self.title = memento.title
         self.content = memento.content
         self.cover = memento.cover
     }
-    
+
     var debugDescription: String {
         return "Article: \(title) - \(content) - \(cover)"
     }
@@ -39,27 +38,27 @@ class ArticleMemento : CustomDebugStringConvertible {
     var title: String
     var content: String
     var cover: String
-    
+
     init(article: Article) {
         self.title = article.title
         self.content = article.content
         self.cover = article.cover
     }
-    
+
     var debugDescription: String {
         return "ArticleMemento: \(title) - \(content) - \(cover)"
     }
-    
+
 }
 
 /// 备忘录管理类
 class ArticleMementoManager {
     private var mementos = [ArticleMemento]()
-    
+
     func getMemento() -> ArticleMemento? {
         return self.mementos.popLast()
     }
-    
+
     func addMemento(_ memento: ArticleMemento) {
         self.mementos.append(memento)
     }

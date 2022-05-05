@@ -2,24 +2,24 @@
 
 ## 样例
 
-![](http://blog.loveli.site/mweb/16171114899773.jpg)
+![](http://blog.oldbird.run/mweb/16171114899773.jpg)
 
 如下示例简单模拟了加减乘除整数算术运算操作，使用了解释器模式：
 
 ```swift
 /// 环境角色
 class Context {
-    
+
     private var valueMap: [Character: Int] = [:]
-    
+
     func lookupValue(_ name: Character) -> Int {
         return self.valueMap[name]!
     }
-    
+
     func assign(variable: Variable, value: Int) {
         self.valueMap[variable.name] = value
     }
-    
+
 }
 
 /// 抽象表达式
@@ -29,22 +29,22 @@ protocol Expression {
 
 /// 终结表达式
 class Constant: Expression {
-    
+
     private var value: Int
-    
+
     init(_ value: Int) {
         self.value = value
     }
-    
+
     func interpret(context: Context) -> Int {
         return value
     }
 }
 
 class Variable:Expression {
-    
+
     let name: Character
-    
+
     init(name: Character) {
         self.name = name
     }
@@ -55,60 +55,60 @@ class Variable:Expression {
 
 /// 非终结表达式
 class Add: Expression {
-    
+
     private var left: Expression
     private var right:Expression
-    
+
     init(left: Expression, right: Expression) {
         self.left = left
         self.right = right
     }
-    
+
     func interpret(context: Context) -> Int {
         return left.interpret(context: context) + right.interpret(context: context)
     }
 }
 
 class Sub: Expression {
-    
+
     private var left: Expression
     private var right:Expression
-    
+
     init(left: Expression, right: Expression) {
         self.left = left
         self.right = right
     }
-    
+
     func interpret(context: Context) -> Int {
         return left.interpret(context: context) - right.interpret(context: context)
     }
 }
 
 class Mul: Expression {
-    
+
     private var left: Expression
     private var right:Expression
-    
+
     init(left: Expression, right: Expression) {
         self.left = left
         self.right = right
     }
-    
+
     func interpret(context: Context) -> Int {
         return left.interpret(context: context) * right.interpret(context: context)
     }
 }
 
 class Div: Expression {
-    
+
     private var left: Expression
     private var right:Expression
-    
+
     init(left: Expression, right: Expression) {
         self.left = left
         self.right = right
     }
-    
+
     func interpret(context: Context) -> Int {
         return left.interpret(context: context) / right.interpret(context: context)
     }

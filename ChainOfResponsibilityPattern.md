@@ -4,7 +4,7 @@
 
 ## 样例
 
-![](http://blog.loveli.site/mweb/16169408042714.jpg)
+![](http://blog.oldbird.run/mweb/16169408042714.jpg)
 
 ```swift
 
@@ -22,43 +22,43 @@ protocol Logger {
 }
 
 extension Logger {
-    
+
     func log(level: LogLevel, message: String) {
         if self.level.rawValue <= level.rawValue {
             write(message: message)
         }
-        
+
         if let next = next {
             next.log(level: level, message: message)
         }
     }
-    
+
 }
 
 final class ConsoleLogger: Logger {
-    
+
     var level: LogLevel
     var next: Logger?
-    
+
     init(level: LogLevel) {
         self.level = level
     }
-    
+
     func write(message: String) {
         print("标准输出：\(message)")
     }
-    
+
 }
 
 final class ErrorLogger: Logger {
-    
+
     var level: LogLevel
     var next: Logger?
-    
+
     init(level: LogLevel) {
         self.level = level
     }
-    
+
     func write(message: String) {
         print("错误输出：\(message)")
     }
@@ -67,11 +67,11 @@ final class ErrorLogger: Logger {
 final class FileLogger: Logger {
     var level: LogLevel
     var next: Logger?
-    
+
     init(level: LogLevel) {
         self.level = level
     }
-    
+
     func write(message: String) {
         print("写入文件：\(message)")
     }

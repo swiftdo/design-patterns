@@ -2,11 +2,9 @@
 
 一般的，我们为了扩展一个类经常使用继承方式实现，由于继承为类引入静态特征，并且随着扩展功能的增多，子类会很膨胀。
 
-
 ## 样例
 
-![](http://blog.loveli.site/mweb/16169011855587.jpg)
-
+![](http://blog.oldbird.run/mweb/16169011855587.jpg)
 
 ```swift
 protocol Shape {
@@ -27,11 +25,11 @@ class Circle: Shape {
 
 class ShapeDecorator: Shape {
     let decoratedShape: Shape
-    
+
     init(shape: Shape) {
         self.decoratedShape = shape
     }
-    
+
     func draw() {
         decoratedShape.draw()
     }
@@ -42,7 +40,7 @@ class RedShapeDecorator: ShapeDecorator {
         super.draw()
         setRedBorder()
     }
-    
+
     func setRedBorder() {
         print("边框的颜色：红色")
     }

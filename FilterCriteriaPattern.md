@@ -2,7 +2,7 @@
 
 ## 案例
 
-![](http://blog.loveli.site/mweb/16169039283713.jpg)
+![](http://blog.oldbird.run/mweb/16169039283713.jpg)
 
 ```swift
 import Foundation
@@ -16,15 +16,15 @@ protocol Filter {
 
 /// 过滤器链,它可以包含多个过滤器，并管理这些过滤器
 class FilterChain<F> where F: Filter {
-        
+
     private var filters: [F] = []
-    
+
     init() {}
-    
+
     func addFilter(_ filter: F) {
         self.filters.append(filter)
     }
-    
+
     func filter(items: [F.T]) -> [F.T] {
         var items: [F.T] = items
         for filter in filters {
@@ -43,9 +43,9 @@ class StringFilter: Filter {
 
 /// 敏感词汇过滤
 class SensitiveFilter: StringFilter {
-    
+
     private var sensitives: [String] = ["黄色", "反动", "贪污"]
-        
+
     override func filter(items: [String]) -> [String] {
         var result: [String] = []
         // 对每个元素进行过滤
@@ -64,7 +64,7 @@ class SensitiveFilter: StringFilter {
 }
 
 class HtmlFilter: StringFilter {
-    
+
     private let wordMap: [String: String] = [
         "&" : "&amp;",
         "'": "&apos;",
@@ -72,10 +72,10 @@ class HtmlFilter: StringFilter {
         "<": "&lt;",
         "\"": "&quot;"
     ]
-    
+
     override func filter(items: [String]) -> [String] {
         var result: [String] = []
-        
+
         for ele in items {
             var str = ele
             self.wordMap.forEach { (key, value) in
@@ -85,7 +85,7 @@ class HtmlFilter: StringFilter {
         }
         return result
     }
-    
+
 }
 
 extension String {
@@ -116,4 +116,3 @@ print("过滤后的内容：\(filterChain.filter(items: contents))")
 过滤前的内容: ["有人出售黄色书:<黄青味道>", "有人企图搞反动活动，————“造谣咨询”"]
 过滤后的内容：["有人出售书:&amp;lt;黄青味道&amp;gt;", "有人企图搞活动，————“造谣咨询”"]
 ```
-

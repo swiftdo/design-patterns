@@ -2,10 +2,9 @@
 
 分离了集合对象的遍历行为，抽象出一个迭代器类来负责，这样既可以做到不暴露集合的内部结构，又可让外部代码透明地访问集合内部的数据。
 
-
 ## 样例
 
-![](http://blog.loveli.site/mweb/16171939142879.jpg)
+![](http://blog.oldbird.run/mweb/16171939142879.jpg)
 
 ```swift
 struct Book {

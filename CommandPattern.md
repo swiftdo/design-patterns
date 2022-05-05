@@ -4,7 +4,7 @@
 
 ## 样例
 
-![](http://blog.loveli.site/mweb/16171111898819.jpg)
+![](http://blog.oldbird.run/mweb/16171111898819.jpg)
 
 ```swift
 protocol Command {
@@ -14,11 +14,11 @@ protocol Command {
 
 class Content : CustomDebugStringConvertible{
     var msg: String
-    
+
     init(_ msg: String) {
         self.msg = msg
     }
-    
+
     var debugDescription: String {
         return msg
     }
@@ -34,15 +34,15 @@ extension String {
 
 class CopyCommand: Command {
     private var content: Content
-    
+
     init(content: Content) {
         self.content = content
     }
-    
+
     func execute() {
         content.msg += content.msg
     }
-    
+
     func undo() {
         content.msg = content.msg[0..<content.msg.count/2]
     }
@@ -51,16 +51,16 @@ class CopyCommand: Command {
 class DeleteCommand: Command {
     private var content: Content
     private var deleted: String?
-    
+
     init(content: Content) {
         self.content = content
     }
-    
+
     func execute() {
         deleted = content.msg[0..<5]
         content.msg = content.msg[5..<content.msg.count]
     }
-    
+
     func undo() {
         if let del = deleted {
             content.msg = del + content.msg
@@ -71,15 +71,15 @@ class DeleteCommand: Command {
 class InsertCommand: Command {
     private var content: Content
     private var ins: String = "https://oldbird.run"
-    
+
     init(content: Content) {
         self.content = content
     }
-    
+
     func execute() {
         content.msg += ins
     }
-    
+
     func undo() {
         content.msg = content.msg[0..<content.msg.count - ins.count]
     }

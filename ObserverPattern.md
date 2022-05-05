@@ -2,15 +2,15 @@
 
 ## 样例
 
-![](http://blog.loveli.site/mweb/16176017312597.jpg)
+![](http://blog.oldbird.run/mweb/16176017312597.jpg)
 
 ```swift
 class Subject {
-    
+
     private var observes: [Observer] = []
-    
+
     private var _state: Int = 0
-    
+
     var state: Int {
         set {
             _state = newValue
@@ -20,16 +20,16 @@ class Subject {
             return _state
         }
     }
-    
+
     func attach(observer: Observer) {
         observes.append(observer)
     }
-    
+
     func deattach(observer: Observer) {
         guard let index = observes.firstIndex(where: {$0.id == observer.id}) else {return}
         observes.remove(at: index)
     }
-    
+
     func notify() {
         observes.forEach { (obs) in
             obs.update()
@@ -46,13 +46,13 @@ protocol Observer {
 class BinaryObserver: Observer {
     var subject: Subject
     var id: String
-    
+
     init(id: String, subject: Subject) {
         self.id = id
         self.subject = subject
         self.subject.attach(observer: self)
     }
-    
+
     func update() {
         let val = String(subject.state, radix: 2, uppercase: true)
         print("二进制: \(val)")
@@ -62,13 +62,13 @@ class BinaryObserver: Observer {
 class OctalObserver: Observer {
     var subject: Subject
     var id: String
-    
+
     init(id: String, subject: Subject) {
         self.id = id
         self.subject = subject
         self.subject.attach(observer: self)
     }
-    
+
     func update() {
         let val = String(subject.state, radix: 8, uppercase: true)
         print("八进制: \(val)")
@@ -78,13 +78,13 @@ class OctalObserver: Observer {
 class HexaObserver: Observer {
     var subject: Subject
     var id: String
-    
+
     init(id: String, subject: Subject) {
         self.id = id
         self.subject = subject
         self.subject.attach(observer: self)
     }
-    
+
     func update() {
         let val = String(subject.state, radix: 16, uppercase: true)
         print("十六进制: \(val)")

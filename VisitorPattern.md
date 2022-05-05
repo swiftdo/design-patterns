@@ -4,7 +4,7 @@
 
 ## 样例
 
-![](http://blog.loveli.site/mweb/16176017312597.jpg)
+![](http://blog.oldbird.run/mweb/16176017312597.jpg)
 
 为啥要有访问者模式呢？我们从一个很简单的表达式求值的例子说起：
 
@@ -44,7 +44,6 @@ func eval(expr: Expr) -> Int {
 
 这样确实能达到目的，但是反复的 `as?` 类型转换，代码太过丑陋了。
 
-
 ```swift
 
 protocol Expr {
@@ -54,7 +53,7 @@ protocol Expr {
 struct Add: Expr {
     var lhs: Expr
     var rhs: Expr
-    
+
     func accept(visitor: ExprVisitor) -> Int {
         return visitor.visitAdd(e: self)
     }
@@ -63,7 +62,7 @@ struct Add: Expr {
 struct Sub: Expr {
     var lhs: Expr
     var rhs: Expr
-    
+
     func accept(visitor: ExprVisitor) -> Int {
         visitor.visitSub(e: self)
     }
@@ -87,11 +86,11 @@ class EvalVisitor: ExprVisitor {
     func visitAdd(e: Add) -> Int {
         return e.lhs.accept(visitor: self) + e.rhs.accept(visitor: self)
     }
-    
+
     func visitSub(e: Sub) -> Int {
         return e.lhs.accept(visitor: self) - e.rhs.accept(visitor: self)
     }
-    
+
     func visitNumber(e: Number) -> Int {
         return e.value
     }
@@ -112,4 +111,3 @@ print(eval(expr: expr))
 ```
 7
 ```
-
