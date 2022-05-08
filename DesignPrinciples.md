@@ -1,3 +1,5 @@
+# 设计原则
+
 我们在设计一些设计模式时，一般遵循如下七项基本原则，它们分别是:
 
 1. 单一职责原则 (Single Responsibility Principle)
