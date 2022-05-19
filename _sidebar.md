@@ -1,7 +1,7 @@
 
 - 基础
     - [类间的关系](ClassReleation.md)
-    - [设计原则](DesignPrinciples)
+    - [设计原则](DesignPrinciples.md)
 
 - 创建型
     - [工厂模式](FactoryPattern.md)
