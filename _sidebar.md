@@ -7,7 +7,7 @@
     - [里氏代换原则](principle/LSP.md)
     - [依赖倒转原则](principle/DIP.md)
     - [接口隔离原则](principle/ISP.md)
-    - [合成/聚合复用原则](principle/CARP.md)
+    - [组合/聚合复用原则](principle/CARP.md)
     - [迪米特法则](principle/LOD.md)
 
 - 创建型
